@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaskTrack - Activity Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1 class="brand">TaskTrack</h1>
+    <div class="user-profile">
+      <img src="../assets/settings-icon.png" alt="Settings">
+      <img src="../assets/user-avatar.png" alt="User Avatar">
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="card activity-tracker">
+      <h2>Activity Tracker</h2>
+      <p>Start your session to begin tracking your activity.</p>
+      <button id="start-btn" class="start-btn">Start</button>
+    </div>
+
+    <div class="card break-section">
+      <h3>Take a Break</h3>
+      <div class="break-buttons">
+        <button class="break-btn">Meal Break</button>
+        <button class="break-btn">Bathroom Break</button>
+        <button class="break-btn">Other</button>
+      </div>
+    </div>
+
+    <div class="card task-input">
+      <h3>Daily Task Input</h3>
+      <textarea id="task-input" placeholder="Enter your tasks for today"></textarea>
+      <button id="update-tasks-btn">Update Tasks</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
